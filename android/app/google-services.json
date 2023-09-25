@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "383612574102",
+    "project_id": "acyuta",
+    "storage_bucket": "acyuta.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:383612574102:android:5e308e2e4a30790272a5b7",
+        "android_client_info": {
+          "package_name": "com.example.acyuta"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBUzqPFR7gRa6YnInn5_eFnZ08fFATw8bg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
