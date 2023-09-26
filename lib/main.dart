@@ -1,5 +1,7 @@
 // import 'package:acyuta/pages/home_page.dart';
 import 'package:acyuta/pages/loginpage.dart';
+import 'package:acyuta/pages/manualinput.dart';
+import 'package:acyuta/pages/preferences.dart';
 // import 'package:acyuta/pages/manualinput.dart';
 // import 'package:firebase_core/firebase_core.dart';
 // import 'package:flutter/foundation.dart';

@@ -1,3 +1,5 @@
+import 'package:acyuta/pages/preferences.dart';
+import 'package:acyuta/result/output.dart';
 import 'package:flutter/material.dart';
 // import 'package:flutter/services.dart';
 
@@ -7,6 +9,8 @@ class ManualInput extends StatefulWidget {
   @override
   State<ManualInput> createState() => _ManualInputState();
 }
+
+var resultList;
 
 final TextEditingController _getPh = TextEditingController();
 final TextEditingController _getN = TextEditingController();
@@ -26,12 +30,25 @@ class _ManualInputState extends State<ManualInput> {
         appBar: AppBar(
           actions: [
             IconButton(
-                onPressed: () {},
-                icon: const Icon(
-                  Icons.upload,
-                  color: Colors.black,
-                  size: 30,
-                ),)
+              onPressed: () {
+                resultList = resultOut(
+                    boronInput: double.parse(_getB.text),
+                    ironInput: double.parse(_getIr.text),
+                    nitrogenInput: double.parse(_getN.text),
+                    zincInput: double.parse(_getZn.text),
+                    sulphurInput: double.parse(_getS.text),
+                    phInput: double.parse(_getPh.text),
+                    phosInput: double.parse(_getPhos.text),
+                    potasInput: double.parse(_getpotassium.text));
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => Preferences()));
+              },
+              icon: const Icon(
+                Icons.upload,
+                color: Colors.black,
+                size: 30,
+              ),
+            )
           ],
           backgroundColor: Colors.greenAccent,
           title: const Text(
